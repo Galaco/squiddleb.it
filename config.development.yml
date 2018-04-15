@@ -1,0 +1,12 @@
+app:
+  url: localhost
+  port: 8080
+
+assets:
+  baseDir: 'public'
+  baseRoute: '/public'
+
+views:
+  template:
+    baseDir: 'tmpl/'
+    baseTemplate: 'base.html.tmpl'
