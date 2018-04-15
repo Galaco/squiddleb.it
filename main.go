@@ -11,7 +11,11 @@ func registerRoutes(router *yamigo.Router) {
 }
 
 func main() {
-	app := yamigo.New(os.Getenv("YAMIGO_ENVIRONMENT"))
+	env := os.Getenv("YAMIGO_ENVIRONMENT")
+	if len(env) < 3 {
+		env = "development"
+	}
+	app := yamigo.New(env)
 	registerRoutes(app.Router())
 
 	app.Run()
