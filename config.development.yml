@@ -1,6 +1,6 @@
 app:
   url: localhost
-  port: 8081
+  port: 80
 
 assets:
   baseDir: 'public'
