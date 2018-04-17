@@ -44,3 +44,9 @@ body {
 .emblem img#text {
     animation: bounce 0.8s ease 0s 1 normal;
 }
+
+#music {
+    position:fixed;
+    top: 0;
+    right: 0;
+}
